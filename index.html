@@ -369,8 +369,24 @@
      * section stands out with its own colour palette.
      */
     #video.feature-section {
-      /* Use the site accent colours for the video section gradient */
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.24), rgba(6, 182, 212, 0.14));
+      background:
+        linear-gradient(
+          135deg,
+          #6b2d1a 0%,
+          #a24d2a 35%,
+          #d67a4a 70%,
+          #f0b37a 100%
+        );
+
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    #video .btn-primary {
+      background: linear-gradient(
+        135deg,
+        #ff9966,
+        #d67a4a
+      );
     }
 
     #travel.feature-section {
@@ -490,7 +506,7 @@
     <section class="hero">
       <div>
         <div class="badge">🚀 Personal GitHub Portfolio</div>
-        <h1><span class="gradient-text">AI, code, and creative.</span></h1>
+        <h1><span class="gradient-text">AI, code, and me.</span></h1>
         <p>
           Hi, I’m Leonardo Angellotti. I build projects in machine learning,
           computer vision, NLP, reinforcement learning, cloud computing, HPC,
