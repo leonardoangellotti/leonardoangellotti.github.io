@@ -29,10 +29,12 @@
 
     body {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
       background:
-        radial-gradient(circle at top left, rgba(124, 58, 237, 0.35), transparent 35%),
-        radial-gradient(circle at top right, rgba(6, 182, 212, 0.24), transparent 30%),
-        var(--bg);
+        radial-gradient(circle at top left, rgba(214, 122, 74, 0.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(240, 179, 122, 0.22), transparent 30%),
+        #1b0f0a;
+
       color: var(--text);
       min-height: 100vh;
       line-height: 1.6;
@@ -87,13 +89,18 @@
       gap: 42px;
       align-items: center;
       padding: 92px 0 70px;
-      /*
-       * Match the video section colour on the homepage by using a similar
-       * gradient and subtle border. This makes the dedicated video page feel
-       * cohesive with the home page’s design.
-       */
-      border: 1px solid var(--card-border);
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.24), rgba(6, 182, 212, 0.14));
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      background:
+        linear-gradient(
+          135deg,
+          #6b2d1a 0%,
+          #a24d2a 35%,
+          #d67a4a 70%,
+          #f0b37a 100%
+        );
+
       border-radius: 34px;
     }
 
@@ -105,7 +112,13 @@
     }
 
     .gradient-text {
-      background: linear-gradient(135deg, #ffffff, #a5f3fc 45%, #c4b5fd);
+      background: linear-gradient(
+        135deg,
+        #fff4e6,
+        #ffcc99 45%,
+        #ff9966
+      );
+
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
